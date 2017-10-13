@@ -31,6 +31,7 @@
     <% if alert %>
         <p class="alert alert-danger"><%= alert %></p>
     <% end %>
+    <%= render 'layouts/messages' %>
     <%= yield %>
   </div>
   <footer>
@@ -38,5 +39,6 @@
       Rails Guide Denemeler <%= Time.now.year %>
     </div>
   </footer>
+
   </body>
 </html>

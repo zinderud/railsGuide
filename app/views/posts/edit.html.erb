@@ -1,0 +1,7 @@
+<%= render "shared/errors", obj: @post %>
+
+<%= form_tag url_for(action: 'update'), method: "patch" do %>
+    <%= render "form_fields" %>
+<% end %>
+<br />
+<%= my_link_to 'Back to Post', posts_path %>

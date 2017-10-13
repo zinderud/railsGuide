@@ -1,0 +1,11 @@
+
+<div class="errors">
+  <% obj.errors.each do |attribute, error| %>
+      <p class="error" style="color: orange">
+        <%= attribute %>: <%= error %>
+      </p>
+  <% end%>
+</div>
+
+# kullanımı <%= render 'shared/errors', obj: @post %>
+# for comment <%= render 'shared/errors', obj: @comment %>
